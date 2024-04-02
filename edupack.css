@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+   
+  }
+
+  body{
+    background-image: url('vincentiu-solomon-ln5drpv_ImI-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    border: 4px solid black;
+    background-color: black;
+  }
+  
+  .text-box h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: aliceblue;
+  }
+  .container {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    /* background-color: rgb(165, 110, 42); */
+  }
+  
+  .front .vid {
+    height: 490px;
+    width: 350px;
+    padding-top: 10px;
+    border-radius: 10px;
+
+    
+    
+  }
+  .front .h2{
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+  }
+  
+  .back {
+    background-color: #04102c;
+    color: aliceblue;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.full{
+  display: flex;
+  gap: 100px;
+  padding: 100px;
+  padding-top: 5px;
+  margin-top: 20px;
+  
+  
+}
+.content{
+  padding: 10px;
+}

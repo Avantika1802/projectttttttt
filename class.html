@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Avantika</h2>
+    <button type="button" id="reconciler">click me</button>
+    <script>
+       let fetchBtn = document.getElementById('reconciler');
+       fetchBtn.addEventListener('click', buttonclickhandler);
+
+       function buttonclickhandler(){
+        const shr = new XMLHttpRequest;
+        shr.open("GET", "ajax_info.txt", true)
+        shr.onload =  function(){
+            // console.log(this.responseText);
+            if(this.status === 201){
+                console.log(this.responseText);
+                console.log("fine");
+            }
+            else{
+                console.log('galat ho tum')
+            }
+        }
+        shr.send();
+    }
+    </script>
+</body>
+</html>

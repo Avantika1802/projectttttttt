@@ -1,0 +1,21 @@
+.countdown-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .countdown {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .sale-message {
+    font-size: 24px;
+    color: green;
+    display: none;
+  }
+

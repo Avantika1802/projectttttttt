@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(13, 22, 49);
+}
+
+.toptext{
+    font-size: 3rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    padding: 60px;
+}
+.p4cont{
+    display: flex;
+    gap: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 10px;
+}
+.left{
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.right h4{
+    color: gray;
+}
+.right h2{
+    color: #80a3ea;
+    font-size: 3rem;
+    margin-top: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.right p{
+    color: white;
+    margin-top: 15px;
+    font-size: 1.25rem;
+    padding-right: 20px;
+}

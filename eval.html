@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 500px;
+        width: 300px;
+        position: relative;
+        transition: transform 1500ms;
+        transform-style: preserve-3d;
+    }
+    .container:hover{
+        transform:rotateY(180deg);
+    }
+    .front{
+        background-color: aqua;
+        position: absolute;
+        /* backface-visibility: hidden; */
+        height: 500px;
+        width: 300px;
+    }
+    .back{
+        background-color: blueviolet;
+        position: absolute;
+        backface-visibility: hidden;
+        height: 500px;
+        width: 300px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="front"></div>
+        <div class="back"></div>
+    </div>
+</body>
+</html>

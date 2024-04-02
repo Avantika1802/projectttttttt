@@ -1,0 +1,52 @@
+<style>
+    .result-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.b1 button{
+  width: 100px;
+  height: 50px;
+  background-color: #03021c;
+  font-weight: 600;
+  color: white;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+</style>
+<section>
+    <div class="result-page">
+      <div class="result-heading">
+        <h2>Inspired students. Inspired results</h2>
+      </div>
+      <div class="result-desc">
+        <p>Our results reflect the passion, hard work, and efforts of our students and teachers.</p>
+      </div>
+      <div class="result-button">
+        <div class="b1">
+          <button onclick="changeImage('pic_bulbon.gif')">CBSE</button>
+        </div>
+        <div class="b1">
+          <button onclick="changeImage('jeel.png')">JEE</button>
+        </div>
+        <div class="b1">
+          <button onclick="changeImage('neetl.png')">NEET</button>
+        </div>
+      </div>
+      <div class="picture">
+        <img id="myImage" src="learnera_students_shine_supreme_in_JEE_main.png">
+      </div>
+    </div>
+  </section>
+  <script>
+  function changeImage(imageFile) {
+      document.getElementById('myImage').src = imageFile;
+  }
+  </script>
